@@ -1,6 +1,6 @@
 #include "str_easy.h"
 
-string itc_cmp_str(str1, str2, num){
+string itc_cmp_str(string str1, string str2, int num){
 
 
 }
