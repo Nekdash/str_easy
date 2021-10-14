@@ -1,9 +1,10 @@
 #include <iostream>
+#include "str_easy.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    itc_first_end_three("abcththtabcx");
     return 0;
 }
