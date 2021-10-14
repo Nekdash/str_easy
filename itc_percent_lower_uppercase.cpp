@@ -11,7 +11,7 @@
 double itc_percent_lower_uppercase(string str){
     long long big = 0;
     long long small = 0;
-    for ( int i = 0, i < itC_len(str), i++){
+    for ( int i = 0; i < itc_len(str); i++){
         int ch = str[i];
         if ( ch <= 90 && ch >= 65){
             big++;
