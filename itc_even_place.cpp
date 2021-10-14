@@ -10,8 +10,8 @@
 
 */
 string itc_even_place(string str){
-    string str = "";
-    for (int i = 0, i < itc_len(str), i+=2){
+    string res = "";
+    for (int i = 0; i < itc_len(str); i+=2){
         res += str[i];
     }
     return res;
