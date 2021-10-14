@@ -5,7 +5,7 @@ string itc_slice_str(string str, int start, int end){
     if ( end >= itc_len(str)){
         end = itc_len(str);
     }
-    for ( int i = start, i < end, i++){
+    for ( int i = start; i < end; i++){
         res += str[i];
     }
     return res;
