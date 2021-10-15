@@ -8,3 +8,4 @@ long long itc_len(string str){
     }
     return i;
 }
+//Goga
