@@ -20,5 +20,6 @@ void itc_first_end_three(string str){
         for (int j = 0; j < itc_len(str); j++){
             cout << str[j];
         }
+        cout << endl;
     }
 }
