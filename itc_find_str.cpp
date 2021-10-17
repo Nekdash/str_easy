@@ -5,20 +5,11 @@ long long itc_find_str(string str1, string str2){
     bool check = true;
     long long res = -1;
     for ( int i = 0; i < itc_len(str1); i++){
-        if ( str1[i] == str2[0] || !start){
-            start = true;
+        if (itc_slice_str(str1, i, i+itc_len(str2)-1) == str2){
             res = i;
-        }else if(start && check){
-            for ( int k = 0; k < itc_len(str2); j++){
-                if (str1[i] == str2[j]){
-                    check = true;
-                }else{
-                    check = false;
-                }
-            }
+            break;
         }
     }
-    if ( check )
-        return res;
-    return -1;
+    return res;
+
 }
