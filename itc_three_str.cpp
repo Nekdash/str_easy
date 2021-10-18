@@ -5,16 +5,17 @@ string itc_three_str(string str1, string str2, string str3){
     while (itc_find_str(itc_slice_str(str1, i , itc_len(str1)), str2) != -1){
             long long start = itc_find_str(itc_slice_str(str1, i , itc_len(str1)), str2);
             str1 = itc_slice_str(str1, 0, start) + str3 + itc_slice_str(str1, start + itc_len(str2), itc_len(str1));
+            i = start + itc_len(str3) - 1;
         }
         return str1;
     }
 
 
 /*
-Написать функцию string itc_three_str(string str1, string str2, string str3),
-которая принимает на вход три строки и возвращает строку,
-которая является первой строкой,
-но в которой подстроки равные второму аргументу
-функции заменены на третий аргумент в функции.
+ГЌГ ГЇГЁГ±Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ string itc_three_str(string str1, string str2, string str3),
+ГЄГ®ГІГ®Г°Г Гї ГЇГ°ГЁГ­ГЁГ¬Г ГҐГІ Г­Г  ГўГµГ®Г¤ ГІГ°ГЁ Г±ГІГ°Г®ГЄГЁ ГЁ ГўГ®Г§ГўГ°Г Г№Г ГҐГІ Г±ГІГ°Г®ГЄГі,
+ГЄГ®ГІГ®Г°Г Гї ГїГўГ«ГїГҐГІГ±Гї ГЇГҐГ°ГўГ®Г© Г±ГІГ°Г®ГЄГ®Г©,
+Г­Г® Гў ГЄГ®ГІГ®Г°Г®Г© ГЇГ®Г¤Г±ГІГ°Г®ГЄГЁ Г°Г ГўГ­Г»ГҐ ГўГІГ®Г°Г®Г¬Гі Г Г°ГЈГіГ¬ГҐГ­ГІГі
+ГґГіГ­ГЄГ¶ГЁГЁ Г§Г Г¬ГҐГ­ГҐГ­Г» Г­Г  ГІГ°ГҐГІГЁГ© Г Г°ГЈГіГ¬ГҐГ­ГІ Гў ГґГіГ­ГЄГ¶ГЁГЁ.
 
 */
