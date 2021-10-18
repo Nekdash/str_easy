@@ -18,6 +18,7 @@ double itc_percent_lower_uppercase(string str){
         }else if(ch <= 122 && ch >= 97){
             small++;
         }
-        return big/small;
+        
     }
+ return big/small;
 }
