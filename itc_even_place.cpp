@@ -11,8 +11,8 @@
 */
 string itc_even_place(string str){
     string res = "";
-    for (int i = 2; i < itc_len(str); i+=2){
-        res += str[i-1];
+    for (int i = 1; i < itc_len(str); i+=2){
+        res += str[i];
     }
     return res;
 }
