@@ -1,9 +1,9 @@
 #include "str_easy.h"
 
 /*
-Написать функцию double ft_percent_lower_uppercase(string str),
- которая возвращает вещественное число равное процентному
-  соотношению прописных и строчных букв в строке
+ГЌГ ГЇГЁГ±Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ double ft_percent_lower_uppercase(string str),
+ ГЄГ®ГІГ®Г°Г Гї ГўГ®Г§ГўГ°Г Г№Г ГҐГІ ГўГҐГ№ГҐГ±ГІГўГҐГ­Г­Г®ГҐ Г·ГЁГ±Г«Г® Г°Г ГўГ­Г®ГҐ ГЇГ°Г®Г¶ГҐГ­ГІГ­Г®Г¬Гі
+  Г±Г®Г®ГІГ­Г®ГёГҐГ­ГЁГѕ ГЇГ°Г®ГЇГЁГ±Г­Г»Гµ ГЁ Г±ГІГ°Г®Г·Г­Г»Гµ ГЎГіГЄГў Гў Г±ГІГ°Г®ГЄГҐ
 
 */
 
@@ -18,6 +18,6 @@ double itc_percent_lower_uppercase(string str){
         }else if(ch <= 122 && ch >= 97){
             small++;
         }
-        return big/small * 100;
+        return big/small;
     }
 }
