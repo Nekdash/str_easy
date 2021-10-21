@@ -1,11 +1,13 @@
 #include "str_easy.h"
 
-string itc_slice_str(string str, int start, int end){
+string itc_slice_str(string str, int start, int endd){
     string res ="";
-    if ( end >= itc_len(str)){
-        end = itc_len(str);
+    if ( endd >= itc_len(str)){
+        endd = itc_len(str);
+    }else if(start >= endd){
+        return str;
     }
-    for ( int i = start; i < end + 1; i++){
+    for ( long long i = start; i <= endd; i++){
         res += str[i];
     }
     return res;
