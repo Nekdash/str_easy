@@ -9,6 +9,7 @@ string itc_cmp_str(string str1, string str2, int num){
   for ( int j = num-1; j< itc_len(str1);j++){
       res += str1[j];
   }
+  res = itc_slice_str(res, 0, itc_len(str1)-1);
   return res;
 
 }
