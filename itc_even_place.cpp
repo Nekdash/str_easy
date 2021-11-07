@@ -13,7 +13,7 @@ string itc_even_place(string str){
     string res = "";
  if (itc_len(str) == 0 || itc_len(str) == 1)
         return "-1";
-    for (int i = 1; i < itc_len(str); i+=2){
+    for (long long i = 1; i < itc_len(str); i+=2){
         res += str[i];
     }
     return res;

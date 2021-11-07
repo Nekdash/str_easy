@@ -6,11 +6,15 @@ string itc_slice_str(string str, int start, int endd){
         endd = itc_len(str);
     }else if(start >= endd){
         return str;
-    }
-    for ( long long i = start; i <= endd; i++){
+    }else if(start == (itc_len(str) - 1)){
+        return str[itc_len(str) - 1];
+    }else{
+        for ( long long i = start; i <= endd; i++){
         res += str[i];
     }
     return res;
+    }
+
 
 }
 
