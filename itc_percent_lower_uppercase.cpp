@@ -22,6 +22,6 @@ double itc_percent_lower_uppercase(string str){
         }
 
     }
-    res = big/ small
+    res = big/ small;
  return res;
 }
