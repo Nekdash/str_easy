@@ -2,12 +2,22 @@
 
 string itc_three_str(string str1, string str2, string str3){
     long long i =0;
-    while (itc_find_str(itc_slice_str(str1, i , itc_len(str1)), str2) != -1){
-            long long start = itc_find_str(itc_slice_str(str1, i , itc_len(str1)), str2);
-            str1 = itc_slice_str(str1, 0, start-1) + str3 + itc_slice_str(str1, start + itc_len(str2), itc_len(str1)-1);
-            i = start + itc_len(str3) - 1;
+    string res = str1;
+    long long len = 0;
+    len = itc_len(str2);
+    while (itc_find_str(res, str2) != -1){
+            str1= res;
+            i = itc_find(str1, str2);
+            res = "";
+            for ( int j = 0; j < i; j++){
+                res += str1;
+            }
+            res += str3;
+            for  ( int k  = i + len; str1[k] != '\0'; k++ ){
+                res += str1[k];
+            }
         }
-        return str1;
+        return res;
     }
 
 
