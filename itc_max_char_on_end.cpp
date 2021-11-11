@@ -10,7 +10,7 @@
             counter += 1;
         }
       if ( counter > res)
-       res = c;
+       res = counter;
         if (ch < '0' || ch > '9'){
             
             counter = 0;
