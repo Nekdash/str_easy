@@ -24,7 +24,7 @@ double itc_percent_lower_uppercase(string str){
     }
  if ( big == 0 || small == 0){
   return -1.0;}
-   res = big/ small;
+   res = small / big;
  return res;
  return -1.0;
 }
