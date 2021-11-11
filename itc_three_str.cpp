@@ -10,7 +10,7 @@ string itc_three_str(string str1, string str2, string str3){
             i = itc_find_str(str1, str2);
             res = "";
             for ( int j = 0; j < i; j++){
-                res += str1;
+                res += str1[j];
             }
             res += str3;
             for  ( int k  = i + len; str1[k] != '\0'; k++ ){
