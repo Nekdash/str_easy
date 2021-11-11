@@ -9,10 +9,10 @@
         if ( ch >= '0' && ch <= '9'){
             counter += 1;
         }
-        else{
-            if (counter > res){
-                res = counter;
-            }
+      if ( c > res)
+       res = c;
+        if (ch < '0' || ch > '9'){
+            
             counter = 0;
         }
      }
