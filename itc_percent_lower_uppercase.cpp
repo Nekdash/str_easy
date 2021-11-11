@@ -9,19 +9,22 @@
 
 
 double itc_percent_lower_uppercase(string str){
-    long long big = 0;
-    long long small = 0;
-    double res;
-    int ch;
+    double big = 0;
+    double small = 0;
+    double res = 0;
+    char ch;
     for ( int i = 0; i < itc_len(str); i++){
         ch = str[i];
-        if ( ch <= 90 && ch >= 65){
+        if ( ch <= 'Z' && ch >= 'A'){
             big++;
-        }else if(ch <= 122 && ch >= 97){
+        }else if(ch <= 'z' && ch >= 'a'){
             small++;
         }
 
     }
-    res = big/ small;
+ if ( big == 0 || small == 0){
+  return -1.0;}
+   res = big/ small;
  return res;
+ return -1.0;
 }
