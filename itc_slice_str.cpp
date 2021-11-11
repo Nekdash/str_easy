@@ -16,7 +16,7 @@ string itc_slice_str(string str, int start, int endd){
     return res;
     }
 
-
+    return "-1";
 }
 
 /*
